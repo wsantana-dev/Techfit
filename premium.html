@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFit - Plano Premium</title>
+  <link rel="stylesheet" href="assets/css/premium.css">
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__logo">TechFit</div>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="essencial.html">Essencial</a></li>
+        <li><a href="premium.html" class="header__nav--active">Premium</a></li>
+        <li><a href="gold.html">Gold</a></li>
+        <li><a href="index.html">Voltar ao Início</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section class="beneficios-wrapper">
+    <h1 class="main-title">Benefícios do Plano Premium</h1>
+
+    <div class="beneficios">
+      <div class="beneficio-card">
+        <img src="assets/img/acessoamigo.jpg" alt="Acesso a visitante">
+        <div class="beneficio-text">1 Acesso a visitante por mês</div>
+      </div>
+
+      <div class="beneficio-card">
+        <img src="assets/img/suplemento.jpg" alt="Suplemento grátis">
+        <div class="beneficio-text">Suplemento grátis</div>
+      </div>
+
+      <div class="beneficio-card">
+        <img src="assets/img/app.jpg" alt="App grátis">
+        <div class="beneficio-text">App grátis</div>
+      </div>
+
+      <div class="beneficio-card">
+        <img src="assets/img/unidade.png" alt="Acesso a todas unidades">
+        <div class="beneficio-text">Acesso liberado a todas unidades</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CADASTRO ===== -->
+  <section class="cadastro">
+  <h1 class="main-title">Cadastre-se no Premium</h1>
+  <form id="cadastroForm" class="cadastro-form">
+  <input type="text" id="nome" placeholder="Seu nome" required>
+  <input type="email" id="email" placeholder="Seu email" required>
+  <input type="text" id="telefone" placeholder="Seu telefone" required>
+  <button type="submit">Cadastrar</button>
+  <p id="confirmacao" class="confirmacao-text"></p>
+</form>
+<!-- Modal de confirmação -->
+<div id="popupConfirmacao" class="popup">
+  <div class="popup-content">
+    <span id="fecharPopup" class="popup-fechar">&times;</span>
+    <p id="mensagemPopup"></p>
+  </div>
+</div>
+
+</section>
+
+  <script src="assets/js/premium.js"></script>
+</body>
+</html>

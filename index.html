@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFit - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+    <div class="header__logo">TechFit</div>
+    <nav class="header__nav">
+    <ul>
+        <li><a href="#home" class="header__nav--active">Home</a></li>
+        <li><a href="#plano">Plano</a></li>
+        <li><a href="#suporte">Suporte</a></li>
+        <!-- <li><a href="#contato">Contato</a></li> removido -->
+    </ul>
+</nav>
+
+</header>
+
+<!-- ===== HOME ===== -->
+<section id="home" class="home-section">
+    <div class="home-overlay"></div>
+    <div class="home-content">
+        <h1 class="main-title">Bem-vindo à TechFit</h1>
+        <p class="home-subtitle">O melhor lugar para treinar, se motivar e alcançar seus objetivos.</p>
+        <a href="#plano" class="btn-home">Comece Agora</a>
+    </div>
+</section>
+
+<!-- ===== PLANO ===== -->
+<section id="plano" class="section">
+    <h1 class="main-title">Escolha seu plano</h1>
+    <div class="pricing">
+        <div class="pricing-plan">
+            <h2 class="pricing-plan__title">Essencial</h2>
+            <p><span class="pricing-plan__price">R$50.00</span> / mês</p>
+            <ul class="pricing-plan__features">
+                <li>1 Acesso a visitante por mês</li>
+                <li>Suplemento grátis</li>
+                <li>App grátis</li>
+            </ul>
+            <a href="essencial.html" class="pricing-plan__cta">Assine já</a>
+        </div>
+
+        <div class="pricing-plan">
+            <h2 class="pricing-plan__title">Premium</h2>
+            <p><span class="pricing-plan__price">R$80.00</span> / mês</p>
+            <ul class="pricing-plan__features">
+                <li>1 Acesso a visitante por mês</li>
+                <li>Suplemento grátis</li>
+                <li>App grátis</li>
+                <li>Acesso liberado a todas unidades</li>
+            </ul>
+           <a href="premium.html" class="pricing-plan__cta">Assine já</a>
+        </div>
+
+        <div class="pricing-plan">
+            <h2 class="pricing-plan__title">Gold</h2>
+            <p><span class="pricing-plan__price">R$120.00</span> / mês</p>
+            <ul class="pricing-plan__features">
+                <li>1 Acesso a visitante por mês</li>
+                <li>Suplemento grátis</li>
+                <li>App grátis</li>
+                <li>Acesso liberado a todas unidades</li>
+                <li>Personal trainer grátis</li>
+            </ul>
+            <a href="gold.html" class="pricing-plan__cta">Assine já</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SUPORTE / CONTATO ===== -->
+<section id="suporte" class="section suporte-section">
+    <h1 class="main-title">Suporte & Contato</h1>
+    <p class="suporte-text">
+        Precisa de ajuda? Entre em contato com nossa equipe de suporte. Estamos prontos para tirar suas dúvidas e resolver problemas.
+    </p>
+
+    <div class="suporte-form">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="email" id="email" placeholder="Seu email" required>
+        <input type="text" id="assunto" placeholder="Assunto" required>
+        <textarea id="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button id="enviar">Enviar</button>
+        <p id="confirmacao" class="confirmacao-text"></p>
+    </div>
+</section>
+
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
