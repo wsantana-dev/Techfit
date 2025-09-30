@@ -442,3 +442,79 @@ body.light-mode .suporte-form button:hover {
 body.light-mode .confirmacao-text {
     color: #51cb00;
 }
+
+/* === Responsividade para celulares (até 600px) === */
+@media (max-width: 600px) {
+
+  body {
+    width: 95%;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .header__logo {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header__nav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .beneficios {
+    padding: 20px 10px;
+  }
+
+  .beneficios {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .beneficio-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .beneficio-card img {
+    height: 250px;
+  }
+
+  .main-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .cadastro-form input,
+  .cadastro-form button {
+    font-size: 14px;
+  }
+
+  .cadastro-form input {
+    padding: 10px;
+  }
+
+  .cadastro-form button {
+    padding: 12px;
+  }
+
+  /* Se tiver seção pricing no index */
+  .pricing {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pricing-plan {
+    max-width: 100%;
+  }
+}
+

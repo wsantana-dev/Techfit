@@ -85,7 +85,6 @@ body.light-mode a.header__nav--active {
     align-items: center;
     gap: 30px;
     padding: 120px 20px 50px;
-    flex-wrap: wrap;
 }
 
 .beneficio-card {
@@ -272,12 +271,18 @@ body.light-mode a.header__nav--active {
 .cadastro {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza horizontalmente */
-    justify-content: center; /* centraliza verticalmente, se necessário */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 50px 20px;
-    gap: 20px; /* espaço entre título e formulário */
+    padding: 150px 20px 50px; /* aumentei de 140px para 150px */
+    gap: 20px;
 }
+
+.cadastro .main-title {
+  font-size: 45px;
+}
+
+
 
 .cadastro-form {
     display: flex;
@@ -326,3 +331,93 @@ body.light-mode a.header__nav--active {
 .popup-fechar:hover {
   color: #ffffff;
 }
+
+/* Ajustes para telas pequenas - celular */
+@media (max-width: 600px) {
+  body {
+    width: 95%; /* mais espaço lateral */
+    font-size: 16px; /* fonte mais confortável */
+  }
+
+  .header {
+    padding: 12px 10px;
+  }
+
+  .header__logo {
+    font-size: 28px;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header__nav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Benefícios */
+  .beneficios {
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 10px 40px;
+  }
+
+  .beneficio-card {
+    max-width: 100%;
+    width: 100%;
+    height: auto; /* deixa a altura automática */
+  }
+
+  .beneficio-card img {
+    height: auto;
+  }
+
+  .beneficio-text {
+    font-size: 14px;
+    padding: 10px 8px 15px;
+  }
+
+  /* Formulário */
+  .cadastro-section {
+    padding: 40px 10px;
+  }
+
+  .cadastro-form {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .cadastro-form input,
+  .cadastro-form button {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+
+  /* Popup */
+  .popup-content {
+    width: 90%;
+    max-width: none;
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+
+  .popup-fechar {
+    font-size: 20px;
+    top: 8px;
+    right: 10px;
+  }
+}
+
+.beneficios-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 140px 5px 50px; /* aumentei o padding-top de 50px para 100px */
+  text-align: center;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
